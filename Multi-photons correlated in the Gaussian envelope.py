@@ -23,16 +23,16 @@ from tqdm import tqdm
 # -----------------------------
 # Parameters
 # -----------------------------
-num_matrices = 200000
+num_matrices = 500000
 H, W = 50, 50
 
-k_corr = 10              # number of correlated pixels per group (was 2 before)
-num_groups = 50          # number of such groups per image (YOU can choose this)
+k_corr = 3              # number of correlated pixels per group (was 2 before)
+num_groups = 5          # number of such groups per image (YOU can choose this)
 
-sigma = 8.0              # Gaussian envelope width (pixels)
+sigma = 5.0              # Gaussian envelope width (pixels)
 
 # Random-distance correlation control
-max_radius = 10          # max distance (in pixels) from anchor for group members (tunable)
+max_radius = 5          # max distance (in pixels) from anchor for group members (tunable)
 min_radius = 1           # avoid placing everything on anchor; keep >=1
 
 pair_value_mode = "random"  # "random" or "fixed"
