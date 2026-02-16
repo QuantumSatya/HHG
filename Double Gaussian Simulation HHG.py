@@ -21,16 +21,16 @@ from tqdm import tqdm
 # -----------------------------
 # Parameters
 # -----------------------------
-num_matrices = 500000
+num_matrices = 100000
 H, W = 50, 50
 
-k_corr = 15
-num_groups = 5
+k_corr = 20
+num_groups = 10
 
 sigma = 3.0              # Gaussian envelope width (pixels)
 
 # Separation between the two Gaussian centers (in pixels)
-s = 20                   # <<< CHANGE THIS (pixels)
+s = 10                   # <<< CHANGE THIS (pixels)
 
 # Random-distance correlation control
 max_radius = 8
