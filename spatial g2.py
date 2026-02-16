@@ -8,7 +8,7 @@ import tifffile as tiff
 num_frames = 100000
 number_of_files = 1
 
-r0, c0 = 25, 15   # reference pixel
+r0, c0 = 25, 25   # reference pixel
 
 # Initialize after reading first frame
 G_same = None      # Σ (n0 * n) same-frame
